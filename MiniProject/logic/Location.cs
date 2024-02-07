@@ -8,6 +8,8 @@ public class Location{
     public Item ?LocationRequiredItem{get; set;}
     public string something1{get; set;}
     public string something2{get; set;}
+    public Quest QuestAvailableHere;
+    public Monster MonsterLivingHere;
     public Location LocationToNorth;
     public Location LocationToSouth;
     public Location LocationToEast;
