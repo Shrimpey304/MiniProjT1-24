@@ -3,7 +3,7 @@ namespace SpiderSlayers;
 public class WorldInit{
 
     public void TestStart(){
-        GetLocationCompass(World.LocationByID(1));
+        GetLocationCompass(World.LocationByID(2));
     }
 
     public void GetLocationCompass(Location location){
@@ -14,7 +14,7 @@ public class WorldInit{
         string East = "------E";
         string South = "\t|\n\t|\n\t|\n\tS";
         
-        Tuple<string, string, string, string> Compass = Tuple.Create<string, string, string, string>(null, null, null, null);
+        Tuple<string, string, string, string> Compass = Tuple.Create<string, string, string, string>(null!, null!, null!, null!);
 
         if (location.LocationToNorth is not null){
             Compass = Tuple.Create(North, Compass.Item2, Compass.Item3, Compass.Item4);
