@@ -8,6 +8,7 @@ public class Location{
     public Item ?LocationRequiredItem{get; set;}
     public string ?something1{get; set;}
     public string ?something2{get; set;}
+    public Dictionary<string, Action> optionsAndActions {get; set;}
     public Quest ?QuestAvailableHere;
     public Monster ?MonsterLivingHere;
     public Location ?LocationToNorth;
@@ -23,9 +24,6 @@ public class Location{
         LocationRequiredItem = reqItem;
         something1 = s1;
         something2 = s2;
-    }
-
-    public static void hi(){
-        Console.WriteLine("afafa");
+        optionsAndActions = new Dictionary<string, Action>();
     }
 }

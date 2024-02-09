@@ -13,7 +13,4 @@ public class Item{
         ItemDescription = desc;
     }
 
-    public static void hi(){
-        Console.WriteLine("afafa");
-    }
 }

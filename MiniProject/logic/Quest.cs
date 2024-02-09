@@ -24,10 +24,6 @@ public class Quest{
         QuestReward = Qreward;
         QuestCompletionItems = new List<CountedItem>();
     }
-
-    public static void hi(){
-        Console.WriteLine("afafa");
-    }
 }
 
 public static class CountedItemExtension

@@ -17,8 +17,4 @@ public class Weapon{
         WeaponMaxDamage = maxdam;
     }
 
-
-    public static void hi(){
-        Console.WriteLine("afafa");
-    }
 }

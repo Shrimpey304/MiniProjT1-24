@@ -3,8 +3,8 @@
 public class Program{
 
     public static void Main(){
-        WorldInit world = new();
-        world.TestStart();
+
+        WorldInit.Start();
     }
 
 }

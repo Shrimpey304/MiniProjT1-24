@@ -24,8 +24,4 @@ public class Monster{
         something2 = s2;
         Loot = new LootTable();
     }
-
-    public static void hi(){
-        Console.WriteLine("afafa");
-    }
 }
