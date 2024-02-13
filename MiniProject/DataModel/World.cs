@@ -137,8 +137,8 @@ public static class World
         home.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
         home.optionsAndActions.Add("Fight", WorldInit.Fight);
         home.optionsAndActions.Add("Run", WorldInit.Run);
-        home.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-
+        home.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition))); 
+        home.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
 
         Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain.",
          null!, null!, null!);

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {}
+    "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {
+    "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
+        "projectUniqueName": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
         "projectName": "MiniProject",
-        "projectPath": "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
-        "packagesPath": "C:\\Users\\vandi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\obj\\",
+        "projectPath": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
+        "packagesPath": "C:\\Users\\kimoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vandi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kimoe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
