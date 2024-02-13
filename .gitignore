@@ -132,3 +132,10 @@ $RECYCLE.BIN/
 
 _NCrunch*
 .fake
+*.dll
+*.dll
+*.props
+*.pdb
+*.editorconfig
+*.cache
+*.cache
