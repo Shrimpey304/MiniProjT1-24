@@ -126,11 +126,28 @@ public static class WorldInit
 
 
 
-        static void MoveCharacter(){
+        public static void MoveCharacter(Location location){
 
-            //implement function to get the ID of the map at the direction the player chooses
+            List<Location> Directions = new()
+            {
+                location.LocationToNorth,
+                location.LocationToEast,
+                location.LocationToSouth,
+                location.LocationToWest
+            };
+
+            int optionsIndex = 0;
+            Console.WriteLine("Travel to:");
+
+            foreach(Location loc in Directions){
+                if(loc is not null){
+                    Console.WriteLine($"{optionsIndex +1}: {Directions[optionsIndex].LocationName}");
+                    optionsIndex ++;
+                }
+            }
 
         }
     }
 
 // Tim was here
+// fuck off tim
