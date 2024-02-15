@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {}
+    "c:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {
+    "c:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
+        "projectUniqueName": "c:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
         "projectName": "MiniProject",
-        "projectPath": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
+        "projectPath": "c:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
         "packagesPath": "C:\\Users\\kimoe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\obj\\",
+        "outputPath": "c:\\Users\\kimoe\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kimoe\\AppData\\Roaming\\NuGet\\NuGet.Config"

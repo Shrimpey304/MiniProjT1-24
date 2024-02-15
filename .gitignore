@@ -139,3 +139,7 @@ _NCrunch*
 *.editorconfig
 *.cache
 *.cache
+
+#custom
+bin/
+data/
