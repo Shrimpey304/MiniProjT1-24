@@ -148,6 +148,7 @@ public static class World
         townSquare.optionsAndActions.Add("Run", WorldInit.Run);
         townSquare.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        townSquare.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -159,6 +160,7 @@ public static class World
         alchemistHut.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistHut.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         alchemistHut.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        alchemistHut.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -170,6 +172,7 @@ public static class World
         alchemistsGarden.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistsGarden.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         alchemistsGarden.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        alchemistsGarden.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -181,6 +184,7 @@ public static class World
         farmhouse.optionsAndActions.Add("Run", WorldInit.Run);
         farmhouse.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         farmhouse.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        farmhouse.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -192,6 +196,7 @@ public static class World
         farmersField.optionsAndActions.Add("Run", WorldInit.Run);
         farmersField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         farmersField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        farmersField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -202,6 +207,7 @@ public static class World
         guardPost.optionsAndActions.Add("Run", WorldInit.Run);
         guardPost.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         guardPost.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        guardPost.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -213,6 +219,7 @@ public static class World
         bridge.optionsAndActions.Add("Run", WorldInit.Run);
         bridge.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         bridge.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        bridge.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 
@@ -224,6 +231,7 @@ public static class World
         spiderField.optionsAndActions.Add("Run", WorldInit.Run);
         spiderField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         spiderField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        spiderField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
 
 
 

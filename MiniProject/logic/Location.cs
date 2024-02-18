@@ -2,7 +2,7 @@ namespace SpiderSlayers;
 
 public class Location{
 
-    public int ?ID{get; set;}
+    public int ID{get; set;}
     public string ?LocationName{get; set;}
     public string ?LocationDescription{get; set;}
     public Item ?LocationRequiredItem{get; set;}
