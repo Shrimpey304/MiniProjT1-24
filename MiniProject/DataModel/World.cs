@@ -140,6 +140,7 @@ public static class World
         home.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition))); 
         home.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         home.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
+        home.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
         Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain.",
          null!, null!, null!);
@@ -149,7 +150,7 @@ public static class World
         townSquare.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        townSquare.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves.",
@@ -161,7 +162,7 @@ public static class World
         alchemistHut.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         alchemistHut.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         alchemistHut.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        alchemistHut.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location alchemistsGarden = new Location(LOCATION_ID_ALCHEMISTS_GARDEN, "Alchemist's garden", "Many plants are growing here.",
@@ -173,7 +174,7 @@ public static class World
         alchemistsGarden.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         alchemistsGarden.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         alchemistsGarden.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        alchemistsGarden.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location farmhouse = new Location(LOCATION_ID_FARMHOUSE, "Farmhouse", "There is a small farmhouse, with a farmer in front.",
@@ -185,7 +186,7 @@ public static class World
         farmhouse.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         farmhouse.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         farmhouse.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        farmhouse.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.",
@@ -197,7 +198,7 @@ public static class World
         farmersField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         farmersField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         farmersField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        farmersField.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.",
@@ -208,7 +209,7 @@ public static class World
         guardPost.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         guardPost.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         guardPost.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        guardPost.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.",
@@ -220,7 +221,7 @@ public static class World
         bridge.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         bridge.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         bridge.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        bridge.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         Location spiderField = new Location(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.",
@@ -232,7 +233,7 @@ public static class World
         spiderField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         spiderField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         spiderField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
-
+        spiderField.optionsAndActions.Add("Quit game", Environment.Exit(0));
 
 
         // Link the locations together
