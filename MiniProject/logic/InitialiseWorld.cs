@@ -11,8 +11,8 @@ public static class WorldInit
         public static void Start()
         {
             TransferPlayer(player);
+
             Location currentLocation = World.LocationByID(World.player.PlayerMapPosition);
-            GetLocationCompass(currentLocation);
             RunCheckboxMenu(currentLocation.optionsAndActions);
         }
 
@@ -87,6 +87,8 @@ public static class WorldInit
             while (true)
             {
                 Console.Clear();
+                Console.WriteLine($"Current Location: {World.LocationByID(World.player.PlayerMapPosition).LocationName}\n\n");
+
                 Console.WriteLine("press 'enter' to select option");
 
                 for (int i = 0; i < options.Count; i++)
@@ -136,16 +138,43 @@ public static class WorldInit
                 location.LocationToWest
             };
 
+            Dictionary<int, Location> LocationChoise = new();
+
             int optionsIndex = 0;
+
             Console.WriteLine("Travel to:");
 
             foreach(Location loc in Directions){
                 if(loc is not null){
-                    Console.WriteLine($"{optionsIndex +1}: {Directions[optionsIndex].LocationName}");
+                    Console.WriteLine($"{optionsIndex + 1}: {loc.LocationName}");
+                    LocationChoise.Add(optionsIndex +1, loc);
                     optionsIndex ++;
                 }
             }
 
+            Console.WriteLine("Where do you want to go");
+
+            string inp = Console.ReadLine().Trim();
+            int intInp;
+            bool isOnlyNumber = int.TryParse(inp, out intInp);
+
+            if(isOnlyNumber){
+                if(LocationChoise.ContainsKey(intInp)){
+
+                    Location selectedLoc = LocationChoise[intInp];
+                    int selectedLocID = selectedLoc.ID;
+                    player.PlayerMapPosition = selectedLocID;
+
+                    Console.WriteLine($"Traveling to: {selectedLoc.LocationName}");
+                    Thread.Sleep(2000);
+                    Start();
+                }
+            }else{
+                Console.WriteLine("Please only input a number");
+                Console.Clear();
+                Thread.Sleep(1000);
+                MoveCharacter(location);
+            }
         }
     }
 
