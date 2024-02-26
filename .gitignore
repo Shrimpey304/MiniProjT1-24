@@ -143,3 +143,9 @@ _NCrunch*
 #custom
 bin/
 data/
+*.json
+*.editorconfig
+*.dll
+*.json
+*.pdb
+MiniProject/obj/project.nuget.cache
