@@ -422,3 +422,7 @@ obj/
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,csharp,dotnetcore
+MiniProject/obj/Debug/net7.0/apphost.exe
+MiniProject/obj/Debug/net7.0/MiniProject.AssemblyInfo.cs
+MiniProject/obj/Debug/net7.0/MiniProject.AssemblyInfoInputs.cache
+MiniProject/obj/Debug/net7.0/MiniProject.GeneratedMSBuildEditorConfig.editorconfig
