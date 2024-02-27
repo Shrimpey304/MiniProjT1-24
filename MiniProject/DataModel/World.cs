@@ -50,7 +50,7 @@ public static class World
 
     public static void QuitGame()
     {
-        Console.Writeline("Quit game");
+        Console.WriteLine("Quit game");
         Environment.Exit(0);
     }
     public static void PopulateItems()
