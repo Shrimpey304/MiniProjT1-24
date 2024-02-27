@@ -11,6 +11,7 @@ public static class World
 
     public const int WEAPON_ID_RUSTY_SWORD = 1;
     public const int WEAPON_ID_CLUB = 2;
+    public const int WEAPON_ID_SQUIRE_SWORD = 3;
 
     public const int ITEM_ID_RAT_TAIL = 1;
     public const int ITEM_ID_PIECE_OF_FUR = 2;
@@ -67,8 +68,9 @@ public static class World
 
     public static void PopulateWeapons()
     {
-        Weapons.Add(new Weapon(WEAPON_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
-        Weapons.Add(new Weapon(WEAPON_ID_CLUB, "Club", "Clubs", 3, 10));
+        Weapons.Add(new Weapon(WEAPON_ID_RUSTY_SWORD, "Rusty sword", "Your old rusty sword, you should replace it soon", 0, 4));
+        Weapons.Add(new Weapon(WEAPON_ID_CLUB, "Club", "Big wooden stick (BIG damage)", 3, 7));
+        Weapons.Add(new Weapon(WEAPON_ID_SQUIRE_SWORD, "Squire sword","A high-quality sword, once wielded by a knight's apprentice.", 5, 12));
     }
 
     public static void PopulateMonsters()
