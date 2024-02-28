@@ -167,6 +167,8 @@ public static class WorldInit
 
                     Console.WriteLine($"Traveling to: {selectedLoc.LocationName}");
                     Thread.Sleep(2000);
+                    StartQuests startQ = new();
+                    startQ.CheckAndStartQuest();
                     Start();
                 }
             }else{

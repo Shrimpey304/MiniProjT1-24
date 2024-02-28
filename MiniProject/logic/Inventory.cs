@@ -19,27 +19,20 @@ public class Inventory{
     public void AddStackable(Item addingItem, int amount)
     {
         bool found = false;
+
         foreach (CountedItem listItem in Stackables)
         {
             if (listItem.Item.ItemName == addingItem.ItemName)
             {
                 listItem.Count += amount;
                 found = !found;
-                break;
+                break; // gaat eruit als item in inventory zit
             }
         }
 
-        if (!found)
+        if (!found) // als item nog niet in inventory zit
         {
-            Stackables.Add(new CountedItem(addingItem));
-            foreach (CountedItem listItem in Stackables)
-            {
-                if (listItem.Item.ItemName == addingItem.ItemName)
-                {
-                    listItem.Count += amount;
-                    break;
-                }
-            }
+            Stackables.Add(new CountedItem(addingItem, amount)); //maakt nieuw item aan
         }
     }
 

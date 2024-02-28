@@ -102,7 +102,7 @@ public static class World
                 null!,
                 WeaponByID(WEAPON_ID_CLUB));
 
-        clearAlchemistGarden.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_RAT_TAIL)));
+        clearAlchemistGarden.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_RAT_TAIL), 3));
 
         Quest clearFarmersField =
             new Quest(
@@ -112,7 +112,7 @@ public static class World
                 ItemByID(ITEM_ID_ADVENTURER_PASS),
                 null!);
 
-        clearFarmersField.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_SNAKE_FANG)));
+        clearFarmersField.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_SNAKE_FANG), 3));
 
         Quest clearSpidersForest =
                     new Quest(
@@ -122,7 +122,7 @@ public static class World
                         ItemByID(ITEM_ID_WINNERS_MEDAL),
                         null!);
 
-        clearSpidersForest.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_SPIDER_SILK)));
+        clearSpidersForest.QuestCompletionItems.AddCountedItem(new CountedItem(ItemByID(ITEM_ID_SPIDER_SILK), 3));
 
         Quests.Add(clearAlchemistGarden);
         Quests.Add(clearFarmersField);

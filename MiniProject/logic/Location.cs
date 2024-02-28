@@ -10,6 +10,7 @@ public class Location{
     public string ?something2{get; set;}
     public Dictionary<string, Action> optionsAndActions {get; set;}
     public Quest ?QuestAvailableHere;
+    public bool QuestAccepted;
     public Monster ?MonsterLivingHere;
     public Location ?LocationToNorth;
     public Location ?LocationToSouth;
@@ -25,5 +26,6 @@ public class Location{
         something1 = s1;
         something2 = s2;
         optionsAndActions = new Dictionary<string, Action>();
+        QuestAccepted = false;
     }
 }
