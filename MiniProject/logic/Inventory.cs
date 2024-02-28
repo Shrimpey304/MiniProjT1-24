@@ -5,6 +5,7 @@ namespace SpiderSlayers;
 public class Inventory{
     public List<Item> Items = new List<Item>() {};
     public List<CountedItem> Stackables = new List<CountedItem>() {};
+    public List<Weapon> WeaponInventory = new();
     public int Gold;
 
     public Inventory(){
