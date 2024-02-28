@@ -5,9 +5,9 @@ public class CountedItem
     public Item Item { get; set; }
     public int Count { get; set; }
 
-    public CountedItem(Item item, int count)
+    public CountedItem(Item item)
     {
         Item = item;
-        Count = count;
+        Count = 0;
     }
 }

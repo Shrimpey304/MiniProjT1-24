@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fE7T27pyW5Lvbt4ki9XzGOZinDcQ6qcsQphyal/jRVpPJVCKAkivj+ozKyGBcUa6Rnw4KPy3g+M1DGobtGbUNQ==",
+  "dgSpecHash": "Ua387g9iN8p0nBywB+GzQCXLMBuSfdTEnZ0/JWrvGsbWO82xp6/DT40UV7DbQsjnBMmi4/emwQJyAeujYYFuaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kimoe\\OneDrive\\Documents\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\vandi\\OneDrive\\Documenten\\GitHub\\MiniProjT1-24\\MiniProject\\MiniProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vandi\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\vandi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\vandi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\vandi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
