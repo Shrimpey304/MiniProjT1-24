@@ -1,6 +1,7 @@
 using System.Security.Cryptography.X509Certificates;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
 namespace SpiderSlayers;
 
@@ -27,6 +28,12 @@ public static class WorldInit
 
         public static void Fight()
         {
+            //Monster currentMonster = World.LocationByID(World.player.PlayerMapPosition).MonsterLivingHere;
+            //Weapon equippedWeapon = Nog geen manier om weapons te equipped te hebben.;
+            
+            //int playerdamage = RandomNumberGenerator.Next(equippedWeapon.WeaponMinDamage, equippedWeapon.WeaponMaxDamage = 1);
+            //int monsterDamage = RandomGenerator.Next(currentMonster.MonsterMinDamage, currentMonster.MonsterMaxDamage + 1);
+            
             Console.WriteLine("Fighting");
         }
 
