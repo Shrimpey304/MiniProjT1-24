@@ -151,6 +151,7 @@ public static class WorldInit
                     optionsIndex ++;
                 }
             }
+            player.RegenerateHP();
 
             Console.WriteLine("Where do you want to go");
 
@@ -183,3 +184,4 @@ public static class WorldInit
 // Tim was here
 // fuck off tim
 // :3
+// Aidan is here :P
