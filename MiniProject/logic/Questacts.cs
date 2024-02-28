@@ -25,7 +25,8 @@ public class StartQuests
         Console.WriteLine($"{ThisQuest.QuestName}: {ThisQuest.QuestDescription}");
         foreach(CountedItem item in ThisQuest.QuestCompletionItems){
 
-            Console.WriteLine($"Requires: {item.Item.ItemName} "); // add item inventory
+            foreach(CountedItem invCounted in WorldInit.player.inventory.Stackables)
+                Console.WriteLine($"Requires: {item.Item.ItemName} {invCounted.Count}/{item.Count}"); // add item inventory
 
         }
 
