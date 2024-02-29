@@ -9,7 +9,7 @@ public class Location{
     public string ?something1{get; set;}
     public string ?something2{get; set;}
     public Dictionary<string, Action> optionsAndActions {get; set;}
-    public Quest ?QuestAvailableHere;
+    public Quest QuestAvailableHere;
     public bool QuestAccepted;
     public Monster ?MonsterLivingHere;
     public Location ?LocationToNorth;

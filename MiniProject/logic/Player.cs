@@ -11,14 +11,14 @@ public class Player{
 
         PlayerLevel = 1;
         PlayerMapPosition = 1;
-        HP = 90 * (PlayerLevel * 10);
+        HP = 90 + (PlayerLevel * 10);
     }
 
     public void RegenerateHP()
     {
         if (PlayerMapPosition == World.LOCATION_ID_HOME)
         { 
-            HP = 90 * (PlayerLevel * 10);
+            HP = 90 + (PlayerLevel * 10);
         }
     }
 

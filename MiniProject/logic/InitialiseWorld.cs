@@ -60,7 +60,8 @@ public static class WorldInit
                 //show damage
                 if (playerDamage == 0){Console.WriteLine("You missed!");}
                 Console.WriteLine($"Player deals {playerDamage} damage to the monster.");
-                Console.WriteLine($"Monster deals {monsterDamage} damage to the player.");
+                Console.WriteLine($"{currentMonster.MonsterName} {monsterDamage} damage to the player.");
+                Console.WriteLine($"Your current HP: {WorldInit.player.HP}");
                 Thread.Sleep(1500);
 
                 //check for W or L
@@ -281,8 +282,7 @@ public static class WorldInit
 
                     Console.WriteLine($"Traveling to: {selectedLoc.LocationName}");
                     Thread.Sleep(2000);
-                    StartQuests startQ = new();
-                    startQ.CheckAndStartQuest();
+                    StartQuests.CheckAndStartQuest();
                     Start();
                 }
             }else{

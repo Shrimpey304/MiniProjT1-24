@@ -144,6 +144,7 @@ public static class World
         Location home = new Location(LOCATION_ID_HOME, "Home", "Your house. You really need to clean up the place.",
          null!, null!, null!);
         home.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        home.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         home.optionsAndActions.Add("Fight", WorldInit.Fight);
         home.optionsAndActions.Add("Run", WorldInit.Run);
         home.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition))); 
@@ -155,6 +156,7 @@ public static class World
          null!, null!, null!);
         townSquare.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
         townSquare.optionsAndActions.Add("Fight", WorldInit.Fight);
+        townSquare.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         townSquare.optionsAndActions.Add("Run", WorldInit.Run);
         townSquare.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
@@ -166,6 +168,7 @@ public static class World
          null!, null!, null!);
         alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
         alchemistHut.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        alchemistHut.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         alchemistHut.optionsAndActions.Add("Fight", WorldInit.Fight);
         alchemistHut.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistHut.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -178,6 +181,7 @@ public static class World
          null!, null!, null!);
         alchemistsGarden.MonsterLivingHere = MonsterByID(MONSTER_ID_RAT);
         alchemistsGarden.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        alchemistsGarden.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         alchemistsGarden.optionsAndActions.Add("Fight", WorldInit.Fight);
         alchemistsGarden.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistsGarden.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -190,6 +194,7 @@ public static class World
          null!, null!, null!);
         farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
         farmhouse.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        farmhouse.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         farmhouse.optionsAndActions.Add("Fight", WorldInit.Fight);
         farmhouse.optionsAndActions.Add("Run", WorldInit.Run);
         farmhouse.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -202,6 +207,7 @@ public static class World
          null!, null!, null!);
         farmersField.MonsterLivingHere = MonsterByID(MONSTER_ID_SNAKE);
         farmersField.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        farmersField.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         farmersField.optionsAndActions.Add("Fight", WorldInit.Fight);
         farmersField.optionsAndActions.Add("Run", WorldInit.Run);
         farmersField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -213,6 +219,7 @@ public static class World
         Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.",
          ItemByID(ITEM_ID_ADVENTURER_PASS), null!, null!);
         guardPost.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        guardPost.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         guardPost.optionsAndActions.Add("Fight", WorldInit.Fight);
         guardPost.optionsAndActions.Add("Run", WorldInit.Run);
         guardPost.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -225,6 +232,7 @@ public static class World
          null!, null!, null!);
         bridge.QuestAvailableHere = QuestByID(QUEST_ID_COLLECT_SPIDER_SILK);
         bridge.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        bridge.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         bridge.optionsAndActions.Add("Fight", WorldInit.Fight);
         bridge.optionsAndActions.Add("Run", WorldInit.Run);
         bridge.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
@@ -237,6 +245,7 @@ public static class World
          null!, null!, null!);
         spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER);
         spiderField.optionsAndActions.Add("Open Inventory", WorldInit.openInventory);
+        spiderField.optionsAndActions.Add("See Quest", StartQuests.ShowQuest);
         spiderField.optionsAndActions.Add("Fight", WorldInit.Fight);
         spiderField.optionsAndActions.Add("Run", WorldInit.Run);
         spiderField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
