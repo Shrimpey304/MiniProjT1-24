@@ -19,7 +19,6 @@ public static class WorldInit
                 if (weapon.WeaponName == "Fists" && !player.inventory.WeaponInventory.Contains(weapon)){
 
                     World.player.inventory.WeaponInventory.Add(weapon);
-
                 }
 
             }
@@ -59,6 +58,7 @@ public static class WorldInit
                 currentMonster.MonsterHP -= playerDamage;
 
                 //show damage
+                if (playerDamage == 0){Console.WriteLine("You missed!");}
                 Console.WriteLine($"Player deals {playerDamage} damage to the monster.");
                 Console.WriteLine($"Monster deals {monsterDamage} damage to the player.");
                 Thread.Sleep(1500);
@@ -74,10 +74,56 @@ public static class WorldInit
                     else if(currentMonster.MonsterHP <= 0)
                     {
                         player.inventory.AddGold(randomGenerator.Next(2, 5));
+
+                        if (currentMonster.MonsterName == "rat")
+                        {
+                            bool weaponPresent = false;
+                            foreach (Weapon weapon in player.inventory.WeaponInventory)
+                            {
+                                if (weapon.WeaponName == "Rusty sword")
+                                {
+                                    weaponPresent = true;
+                                }
+                            }
+                            if (!weaponPresent)
+                            {
+                                player.inventory.WeaponInventory.Add(World.Weapons[0]);
+                            }
+                        }
+                        else if (currentMonster.MonsterName == "snake")
+                        {
+                            bool weaponPresent = false;
+                            foreach (Weapon weapon in player.inventory.WeaponInventory)
+                            {
+                                if (weapon.WeaponName == "Club")
+                                {
+                                    weaponPresent = true;
+                                }
+                            }
+                            if (!weaponPresent)
+                            {
+                                player.inventory.WeaponInventory.Add(World.Weapons[1]);
+                            }
+                        }
+                        else if (currentMonster.MonsterName == "giant spider")
+                        {
+                            bool weaponPresent = false;
+                            foreach (Weapon weapon in player.inventory.WeaponInventory)
+                            {
+                                if (weapon.WeaponName == "Squire sword")
+                                {
+                                    weaponPresent = true;
+                                }
+                            }
+                            if (!weaponPresent)
+                            {
+                                player.inventory.WeaponInventory.Add(World.Weapons[2]);
+                            }
+                        }
+
                         Console.WriteLine("enemy felt");
                         Thread.Sleep(3000);
                         RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
-
                     }
 
                 }

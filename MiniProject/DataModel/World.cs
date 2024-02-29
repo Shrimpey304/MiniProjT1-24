@@ -69,10 +69,10 @@ public static class World
 
     public static void PopulateWeapons()
     {
-        Weapons.Add(new Weapon(WEAPON_ID_RUSTY_SWORD, "Rusty sword", "Your old rusty sword, you should replace it soon", 0, 4));
+        Weapons.Add(new Weapon(WEAPON_ID_RUSTY_SWORD, "Rusty sword", "Your old rusty sword, you should replace it soon", 2, 5));
         Weapons.Add(new Weapon(WEAPON_ID_CLUB, "Club", "Big wooden stick (BIG damage)", 3, 7));
         Weapons.Add(new Weapon(WEAPON_ID_SQUIRE_SWORD, "Squire sword","A high-quality sword, once wielded by a knight's apprentice.", 5, 12));
-        Weapons.Add(new Weapon(WEAPON_ID_FISTS, "Fists", "the poor mans club", 3, 5));
+        Weapons.Add(new Weapon(WEAPON_ID_FISTS, "Fists", "the poor mans club", 0, 4));
     }
 
     public static void PopulateMonsters()
@@ -81,11 +81,11 @@ public static class World
         rat.Loot.AddItem(ItemByID(ITEM_ID_RAT_TAIL));
         rat.Loot.AddItem(ItemByID(ITEM_ID_PIECE_OF_FUR));
 
-        Monster snake = new Monster(MONSTER_ID_SNAKE, "snake", "snakes", 5, 4, 20, 7, 7);
+        Monster snake = new Monster(MONSTER_ID_SNAKE, "snake", "snakes", 15, 4, 20, 7, 7);
         snake.Loot.AddItem(ItemByID(ITEM_ID_SNAKE_FANG));
         snake.Loot.AddItem(ItemByID(ITEM_ID_SNAKESKIN));
 
-        Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER, "giant spider", "giant spiders", 5, 5, 30, 10, 10);
+        Monster giantSpider = new Monster(MONSTER_ID_GIANT_SPIDER, "giant spider", "giant spiders", 30, 5, 30, 10, 10);
         giantSpider.Loot.AddItem(ItemByID(ITEM_ID_SPIDER_FANG));
         giantSpider.Loot.AddItem(ItemByID(ITEM_ID_SPIDER_SILK));
 
