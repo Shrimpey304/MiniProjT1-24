@@ -16,7 +16,6 @@ public class Inventory{
         this.Items.Add(item);
     }
 
-
     public void AddStackable(Item addingItem, int amount)
     {
         bool found = false;

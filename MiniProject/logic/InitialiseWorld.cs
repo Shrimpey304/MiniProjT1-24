@@ -14,6 +14,15 @@ public static class WorldInit
             TransferPlayer(player);
 
             Location currentLocation = World.LocationByID(World.player.PlayerMapPosition);
+            foreach (Weapon weapon in World.Weapons){
+
+                if (weapon.WeaponName == "Fists" && !player.inventory.WeaponInventory.Contains(weapon)){
+
+                    World.player.inventory.WeaponInventory.Add(weapon);
+
+                }
+
+            }
             RunCheckboxMenu(currentLocation.optionsAndActions);
         }
 
@@ -28,44 +37,60 @@ public static class WorldInit
 
         private static Random randomGenerator = new Random();
 
+        public static Weapon equipedWeapon;
         public static void Fight()
         {
-            Monster currentMonster = World.LocationByID(World.player.PlayerMapPosition).MonsterLivingHere;
-            Weapon equipedWeapon = Equip.SelectedWeapon;
-            //get damage values
-            int playerDamage = randomGenerator.Next(equipedWeapon.WeaponMinDamage, equipedWeapon.WeaponMaxDamage + 1);
-            int monsterDamage = randomGenerator.Next(currentMonster.MonsterMinDamage, currentMonster.MonsterMaxDamage + 1);
+            if(World.LocationByID(World.player.PlayerMapPosition).MonsterLivingHere is not null){
+    
+                Monster currentMonster = World.LocationByID(World.player.PlayerMapPosition).MonsterLivingHere;
+                Equip.Equip_Weapon();
 
-            //take damage
-            World.player.HP -= monsterDamage;
-            currentMonster.MonsterHP -= playerDamage;
+                equipedWeapon = Equip.SelectedItems;
 
-            //show damage
-            Console.WriteLine($"Player deals {playerDamage} damage to the monster.");
-            Console.WriteLine($"Monster deals {monsterDamage} damage to the player.");
+                while(currentMonster.MonsterHP >= 0){
 
-            //check for W or L
-            while(currentMonster.MonsterHP >= 0){
+                //get damage values
+                int playerDamage = randomGenerator.Next(equipedWeapon.WeaponMinDamage, equipedWeapon.WeaponMaxDamage + 1);
+                int monsterDamage = randomGenerator.Next(currentMonster.MonsterMinDamage, currentMonster.MonsterMaxDamage + 1);
 
-                if (World.player.HP <= 0)
-                {
-                    Console.WriteLine("YOU DIED, start over");
-                    Thread.Sleep(6000);
-                    World.QuitGame();
+                //take damage
+                World.player.HP -= monsterDamage;
+                currentMonster.MonsterHP -= playerDamage;
+
+                //show damage
+                Console.WriteLine($"Player deals {playerDamage} damage to the monster.");
+                Console.WriteLine($"Monster deals {monsterDamage} damage to the player.");
+                Thread.Sleep(1500);
+
+                //check for W or L
+
+                    if (World.player.HP <= 0)
+                    {
+                        Console.WriteLine("YOU DIED, start over");
+                        Thread.Sleep(6000);
+                        World.QuitGame();
+                    }
+                    else if(currentMonster.MonsterHP <= 0)
+                    {
+                        Console.WriteLine("enemy felt");
+                        Thread.Sleep(3000);
+                        RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
+
+                    }
+
                 }
-                else if(currentMonster.MonsterHP <= 0)
-                {
-                    Console.WriteLine("enemy felt");
-                    Thread.Sleep(3000);
-                    RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
 
-                }
+                Console.WriteLine($"Congrats you have defeated the {currentMonster.MonsterName}");
+                Thread.Sleep(3000);
+                RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
+
+            }else{
+
+                Console.WriteLine("it seems there are no monsters here, you are safe");
+                Thread.Sleep(3000);
+                RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
 
             }
-
-            Console.WriteLine($"Congrats you have defeated the {currentMonster.MonsterName}");
-            Thread.Sleep(3000);
-            RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
 
         }
 

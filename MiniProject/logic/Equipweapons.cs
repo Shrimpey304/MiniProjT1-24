@@ -32,13 +32,16 @@ public static class Equip
 
     }
 
+    public static Weapon SelectedItems;
+
     public static void Equip_Weapon()
     {
         
         Console.WriteLine("What item do you want to equip? ");
+
         // string equiped_request = Console.ReadLine();
         int counter = 0;
-        foreach (Weapon weapon in World.player.inventory.WeaponInventory)
+        foreach (Weapon weapon in WorldInit.player.inventory.WeaponInventory)
         {
 
             Console.WriteLine($"[{++counter}] - {weapon.WeaponName}");
@@ -47,12 +50,12 @@ public static class Equip
         try{
 
             int user_input_Converted = Convert.ToInt32(user_input);
-            Weapon SelectedItems = World.player.inventory.WeaponInventory[user_input_Converted - 1];
-
+            SelectedItems = WorldInit.player.inventory.WeaponInventory[user_input_Converted - 1];
+            
         }catch(Exception e){
             Console.WriteLine("invalid input");
             Thread.Sleep(2000);
-            Equip_item();
+            Equip_Weapon();
         }
 
     }
