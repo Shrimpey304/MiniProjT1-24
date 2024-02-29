@@ -33,6 +33,7 @@ public static class WorldInit
         public static void openInventory()
         {
             Console.WriteLine("opened inv");
+            player.inventory.ShowInv();
         }
 
         private static Random randomGenerator = new Random();
@@ -72,6 +73,7 @@ public static class WorldInit
                     }
                     else if(currentMonster.MonsterHP <= 0)
                     {
+                        player.inventory.AddGold(randomGenerator.Next(2, 5));
                         Console.WriteLine("enemy felt");
                         Thread.Sleep(3000);
                         RunCheckboxMenu(World.LocationByID(World.player.PlayerMapPosition).optionsAndActions);
@@ -250,3 +252,4 @@ public static class WorldInit
 // fuck off tim
 // :3
 // Aidan is here :P
+// helo

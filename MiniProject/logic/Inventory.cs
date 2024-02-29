@@ -40,4 +40,30 @@ public class Inventory{
     {
         this.Gold += amount;
     }
+
+    public void ShowInv()
+    {
+        Console.WriteLine($"Gold: {this.Gold}");
+
+        Console.WriteLine("Weapons:");
+        int counter = 0;
+        foreach (Weapon weapon in WeaponInventory)
+        {
+            Console.WriteLine($"[{counter++}] - {weapon.WeaponName} ({weapon.WeaponDescription})");
+        }
+
+        Console.WriteLine("\n-------------------\nGear:");
+        counter = 0;
+        foreach (Item item in Items)
+        {
+            Console.WriteLine($"[{counter++}] - {item.ItemName} ({item.ItemDescription})");
+        }
+
+        Console.WriteLine("\n-------------------\nMiscellaenious items:");
+        counter = 0;
+        foreach (CountedItem stackable in Stackables)
+        {
+            Console.WriteLine($"[{counter++}] - {stackable.Count}x {stackable.Item.ItemName} ({stackable.Item.ItemDescription})");
+        }
+    }
 }

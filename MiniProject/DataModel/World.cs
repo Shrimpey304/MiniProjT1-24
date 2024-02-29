@@ -147,7 +147,7 @@ public static class World
         home.optionsAndActions.Add("Fight", WorldInit.Fight);
         home.optionsAndActions.Add("Run", WorldInit.Run);
         home.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition))); 
-        home.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        home.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         home.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         home.optionsAndActions.Add("Quit game", QuitGame);
 
@@ -157,7 +157,7 @@ public static class World
         townSquare.optionsAndActions.Add("Fight", WorldInit.Fight);
         townSquare.optionsAndActions.Add("Run", WorldInit.Run);
         townSquare.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        townSquare.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        townSquare.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         townSquare.optionsAndActions.Add("Quit game", QuitGame);
 
@@ -169,7 +169,7 @@ public static class World
         alchemistHut.optionsAndActions.Add("Fight", WorldInit.Fight);
         alchemistHut.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistHut.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        alchemistHut.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        alchemistHut.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         alchemistHut.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         alchemistHut.optionsAndActions.Add("Quit game", QuitGame);
 
@@ -181,7 +181,7 @@ public static class World
         alchemistsGarden.optionsAndActions.Add("Fight", WorldInit.Fight);
         alchemistsGarden.optionsAndActions.Add("Run", WorldInit.Run);
         alchemistsGarden.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        alchemistsGarden.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        alchemistsGarden.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         alchemistsGarden.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         alchemistsGarden.optionsAndActions.Add("Quit game" , QuitGame);
 
@@ -193,7 +193,7 @@ public static class World
         farmhouse.optionsAndActions.Add("Fight", WorldInit.Fight);
         farmhouse.optionsAndActions.Add("Run", WorldInit.Run);
         farmhouse.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        farmhouse.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        farmhouse.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         farmhouse.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         farmhouse.optionsAndActions.Add("Quit game" , QuitGame);
 
@@ -205,7 +205,7 @@ public static class World
         farmersField.optionsAndActions.Add("Fight", WorldInit.Fight);
         farmersField.optionsAndActions.Add("Run", WorldInit.Run);
         farmersField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        farmersField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        farmersField.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         farmersField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         farmersField.optionsAndActions.Add("Quit game" , QuitGame);
 
@@ -216,7 +216,7 @@ public static class World
         guardPost.optionsAndActions.Add("Fight", WorldInit.Fight);
         guardPost.optionsAndActions.Add("Run", WorldInit.Run);
         guardPost.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        guardPost.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        guardPost.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         guardPost.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         guardPost.optionsAndActions.Add("Quit game" , QuitGame);
 
@@ -228,7 +228,7 @@ public static class World
         bridge.optionsAndActions.Add("Fight", WorldInit.Fight);
         bridge.optionsAndActions.Add("Run", WorldInit.Run);
         bridge.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        bridge.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        bridge.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         bridge.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         bridge.optionsAndActions.Add("Quit game" , QuitGame);
 
@@ -240,7 +240,7 @@ public static class World
         spiderField.optionsAndActions.Add("Fight", WorldInit.Fight);
         spiderField.optionsAndActions.Add("Run", WorldInit.Run);
         spiderField.optionsAndActions.Add("Tell Location", () => WorldInit.TellPosition(LocationByID(player.PlayerMapPosition)));
-        spiderField.optionsAndActions.Add("get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
+        spiderField.optionsAndActions.Add("Get compass", () => WorldInit.GetLocationCompass(LocationByID(player.PlayerMapPosition)));
         spiderField.optionsAndActions.Add("Move", () => WorldInit.MoveCharacter(LocationByID(player.PlayerMapPosition)));
         spiderField.optionsAndActions.Add("Quit game" , QuitGame);
 
